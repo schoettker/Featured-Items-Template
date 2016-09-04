@@ -18,18 +18,47 @@
 .nav {
   width: 50%;
 }
+.nav {
+  margin-top: 2.5%;
+}
 .header {
   height: 70px;
+  margin-top: 5%;
 }
 .heading {
   background-color: rgba(0, 0, 0, 0.9);
   width: 50%;
-  margin-top: 40px;
+  margin: 5% 0;
   height: 15px;
 }
-.gallery {
+.main,
+.secondary {
   margin-top: 40px;
+}
+.gallery {
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
-  height: 50%;
+  height: 40%;
+}
+.secondary {
+  display: none;
+}
+/*Media Queries*/
+@media screen and (min-width: 540px) {
+  .main,
+  .secondary {
+    display: inline-block;
+    width: 47.5%;
+  }
+  .title {
+    display: inline-block;
+  }
+  .nav {
+    float: right;
+    border: 1px solid red;
+    margin-top: 0;
+  }
+  .wrap {
+    text-align: center;
+  }
 }
