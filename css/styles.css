@@ -1,15 +1,18 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
-
+*/
 .columns {
   min-height: 50px;
 }
 
 /* End for testing */
+body {
+  background-color: gray;
+}
 .container {
   width: 98%;
   margin: 0 auto;
@@ -17,6 +20,7 @@
 .title,
 .nav {
   width: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .nav {
   margin-top: 2.5%;
@@ -24,6 +28,7 @@
 .header {
   height: 70px;
   margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .heading {
   background-color: rgba(0, 0, 0, 0.9);
@@ -42,6 +47,9 @@
 }
 .secondary {
   display: none;
+}
+p {
+  text-align: left;
 }
 /*Media Queries*/
 @media screen and (min-width: 540px) {
